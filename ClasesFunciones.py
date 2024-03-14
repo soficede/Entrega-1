@@ -81,7 +81,7 @@ class Marcapasos(Implantes):
         super().__init__(medico, fecha, estado, cantidad,cedula)
         self.__frecuencia = frecuencia
         self.__electrodos = electrodos
-        self.__alambrico=alambrico
+        self.__alambrico = alambrico
 
     def __str__(self):
         return f"Marcapasos: \n médico:{self.medico} \n fecha:{self.fecha} \n estado:{self.estado} \n cantidad:{self.cantidad} \n cedula:{self.cedula} \n frecuencia:{self.frecuencia} \n #electrodos:{self.electrodos} \n alambrico:{self.alambrico}"
@@ -105,7 +105,7 @@ class Marcapasos(Implantes):
         return self.__alambrico
     @alambrico.setter
     def alambrico(self,alambrico):
-        self.__alambrico=alambrico
+        self.__alambrico = alambrico
 
 class Stents (Implantes):
     def __init__(self,  medico, fecha, estado, cantidad, cedula, longitud, diametro, material):
@@ -122,21 +122,21 @@ class Stents (Implantes):
         return self.__longitud
     @longitud.setter
     def longitud(self,longitud):
-        self.__longitud=longitud
+        self.__longitud = longitud
     @property
 
     def diametro(self):
         return self.__diametro
     @diametro.setter
     def diametro(self,diametro):
-        self.__diametro=diametro
+        self.__diametro = diametro
     @property
 
     def material(self):
         return self.__material
     @material.setter
     def material(self,material):
-        self.__material=material
+        self.__material = material
 
 class ImplantesDentales(Implantes):
     def __init__(self,  medico, fecha, estado, cantidad, cedula, forma, sistfij, material):

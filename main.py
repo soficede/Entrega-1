@@ -176,6 +176,7 @@ while True:
 
             protesisr = ProtesisRodilla(medico, fecha, estado, cantidad, cedula, fijacion, tamano, material)
             sistema.actualizar_implante(indice,protesisr)
+        
 
     elif menu == 4: #Visualizar el inventario completo
         sistema.ver_implante()
