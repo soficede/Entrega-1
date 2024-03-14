@@ -1,8 +1,8 @@
 
 class Implantes:
     def __init__(self, medico, fecha, estado, cantidad, cedula):
-        self.__fecha = fecha
         self.__medico = medico
+        self.__fecha = fecha
         self.__estado = estado
         self.__cantidad = cantidad
         self.__cedula = cedula
@@ -57,7 +57,7 @@ class Protesiscadera(Implantes):
         return self.__fijacion
     @fijacion.setter
 
-    def tipofij(self,fijacion):
+    def fijacion(self,fijacion):
         self.__fijacion = fijacion
     @property
 
