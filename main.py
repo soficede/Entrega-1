@@ -34,19 +34,7 @@ while True:
             protesisc = Protesiscadera(medico, fecha, estado, cantidad, cedula, fijacion, tamaño, material)
             sistema.agregar_implante(protesisc)
 
-        elif tipoimp == 2: #Marcapasos cardíacos
-            medico = int(input("Ingrese número de identificación del medico responsable: "))
-            fecha = input("Ingrese fecha:  ")
-            estado = input("Ingrese estado del implante:")
-            cantidad = input("Ingrese cantidad:")
-            cedula = int(input("Ingrese la cédula del paciente"))
-
-            frecuencia = input("Ingrese frecuencia de estimulación: ")
-            electrodos = input("Ingrese número de electrodos: ")
-            alambrico = input("ingrese si es alambrico o inalambrico: ")
-
-            marcap = Marcapasos(medico, fecha, estado, cantidad, cedula, frecuencia, electrodos, alambrico)
-            sistema.agregar_implante(marcap)
+        
 
         elif tipoimp == 3: #Stens coronarios
             medico = int(input("Ingrese número de identificación del medico responsable: "))
